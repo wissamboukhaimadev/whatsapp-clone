@@ -12,7 +12,7 @@ export default function Login() {
   const SubmitLoginInfo = (e) => {
     e.preventDefault();
     axios
-      .post('http://localhost:4000/user/sync', {
+      .post('https://whatsapp-app-api.herokuapp.com/user/sync', {
         email: LoginInfo.email,
         password: LoginInfo.password,
       })
